@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renova - Macetas Ecológicas</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #f4f6f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.8em;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=60') center/cover no-repeat;
+      color: white;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 10%;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      max-width: 700px;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    section {
+      padding: 60px 10%;
+    }
+
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 400px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .about-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .about-text h2 {
+      color: #2e7d32;
+      margin-bottom: 15px;
+    }
+
+    .products {
+      text-align: center;
+    }
+
+    .products h2 {
+      color: #2e7d32;
+      margin-bottom: 20px;
+    }
+
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Renova</h1>
+    <nav>
+      <a href="#about">Nosotros</a>
+      <a href="#products">Productos</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Damos nueva vida al plástico creando macetas sostenibles para un mundo más verde</h2>
+  </section>
+
+  <section id="about" class="about">
+    <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?auto=format&fit=crop&w=500&q=60" alt="Macetas recicladas">
+    <div class="about-text">
+      <h2>Sobre Renova</h2>
+      <p>En <strong>Renova</strong> transformamos plástico reciclado en macetas únicas y ecológicas. Nuestro objetivo es reducir el impacto ambiental y promover el diseño sostenible. Cada una de nuestras macetas no solo embellece tu hogar, sino que también ayuda a reducir los residuos plásticos que contaminan el planeta.</p>
+      <p>Creemos en la economía circular y en dar una segunda oportunidad a los materiales, creando productos duraderos, coloridos y 100% reciclados.</p>
+    </div>
+  </section>
+
+  <section id="products" class="products">
+    <h2>Nuestros Productos</h2>
+    <div class="product-list">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1604933738055-7c5e94abbdde?auto=format&fit=crop&w=500&q=60" alt="Maceta ecológica">
+        <h3>Maceta Clásica</h3>
+        <p>Diseño tradicional hecho con plástico 100% reciclado. Ideal para interiores o exteriores.</p>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1606813902911-9b11b88715b2?auto=format&fit=crop&w=500&q=60" alt="Maceta colorida">
+        <h3>Maceta Color Eco</h3>
+        <p>Fabricada con materiales reciclados y tintes naturales. Alegre y resistente.</p>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1582582494700-1ded8f58c633?auto=format&fit=crop&w=500&q=60" alt="Maceta moderna">
+        <h3>Maceta Moderna</h3>
+        <p>Estilo minimalista y moderno, creada para combinar sostenibilidad y elegancia.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 style="color:#2e7d32; text-align:center;">Contáctanos</h2>
+    <p style="text-align:center; max-width:600px; margin:20px auto;">
+      Si querés saber más sobre nuestros productos o realizar un pedido, escribinos a:  
+      <strong>renova.eco@gmail.com</strong>  
+      o visitanos en nuestras redes sociales.
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Renova S.R.L. | Hecho con materiales reciclados 🌿</p>
+  </footer>
+
+</body>
+</html>
